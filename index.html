@@ -1,52 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-    <hrader class="header">
-        <div class="header__title">Free shipping over $100</div>
-        <div class="container">
-            <div class="header__inner">
-                <a class="logo" href="#" >
-                    <img class="logo__link" src="images/logo.svg" alt="logo">
-                </a>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a class="menu__list-link" href="#">Home</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__list-link" href="#">Shop</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__list-link" href="#">About</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__list-link" href="#">What is Coffeeface</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__list-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="bascet__box">                    
-                    <a class="bag header__circle" href="#">
-                        <img class="images-icon" src="images/shopping-bag.svg" alt="">
-                        <span>3</span>
-                    </a>
-                </div>
-            </div>
+  <hrader class="header">
+    <div class="header__title">Free shipping over $100</div>
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__link" src="images/logo.svg" alt="logo" />
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__list-link" href="#">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__list-link" href="#">Shop</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__list-link" href="#">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__list-link" href="#">What is Coffeeface</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__list-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="bascet__box">
+          <a class="bag header__circle" href="#">
+            <img class="images-icon" src="images/shopping-bag.svg" alt="" />
+            <span>3</span>
+          </a>
         </div>
-    </hrader>
+      </div>
+    </div>
+  </hrader>
+
+  <section class="shopping">
+    <div class="shopping__wrapper">
+      <img class="images-top" src="images/shop-top.jpg" alt="goods" />
+      <div class="container">
+        <div class="shopping__text">
+          <h2 class="shopping__title">
+            A Revolution in Antibacterial, Antiviral Facial Cleaning
+          </h2>
+          <p class="shopping__subtitle">
+            Manuka honey antibacterial properties that help protect and seal
+            your skin
+          </p>
+        </div>
+        <button class="btn">Shop now</button>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <div class="about__wrapper">
+        <div class="about__text">
+          <div class="about__title">
+            <img src="images/logo.svg" alt="logo" />
+          </div>
+          <div class="about__subtitle">
+            is an innovative approach to beauty. Uncomplicated. Sophisticated.
+            Declutter your daily skincare routine.
+          </div>
+        </div>
+        <img class="about__img" src="images/customer-img.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section class="shopping">
+    <div class="shopping__wrapper">
+      <img class="images-top" src="images/shop-bottom.svg" alt="goods" />
+      <div class="container">
+        <div class="shopping__text">
+          <h2 class="shopping__title shopping__title-text">
+            3-in-1 Pads Exfoliate. Serum. Moisturize.
+          </h2>
+          <p class="shopping__subtitle shopping__subtitle-text">
+            Stabilized caffeine works hard to immediately stimulate collagen
+            production in your skin, plus it provides a wake-you-up tightening
+            effect.
+          </p>
+          <fieldset class="rating">
+            <div class="rating__caption">Reviews</div>
+            <div class="rating__group">
+              <input class="rating__star" type="radio" value="1">
+              <input class="rating__star" type="radio" value="2">
+              <input class="rating__star" type="radio" value="3">
+              <input class="rating__star" type="radio" value="4">
+              <input class="rating__star" type="radio" value="5">
+            </div>
+          </fieldset>
+          <div class="price">
+            <div class="shopping-price">$84.99</div>
+            <div class="shopping-price-sale">$64.99</div>
+          </div>
+        </div>
+        <button class="btn">Buy it now</button>
+      </div>
+    </div>
+  </section>
+  <section class="block">
+    <div class="block__wrapper">
+      <img class="block__img" src="images/block.jpg" alt="images" />
+      <div class="block__title">
+        Exfoliate. <br />
+        Serum. <br />
+        Moisturize.
+      </div>
+    </div>
+  </section>
+  <section class="using">
+    <div class="using__wrapper">
+      <img class="using-background__img" src="images/using-img.svg" alt="" />
+      <div class="container">
+        <div class="using__title">How to use Coffeeface</div>
+        <div class="using-content__wrap">
+          <div class="using__inner">
+            <div class="using__circle">
+              <div class="using__img">
+                <img class="using-icon__img" src="images/icon-1.svg" alt="" />
+              </div>
+            </div>
+            <p class="using__text">Wash your face</p>
+          </div>
+          <div class="using__inner">
+            <div class="using__circle">
+              <div class="using__img">
+                <img class="using-icon__img" src="images/icon-2.svg" alt="" />
+              </div>
+            </div>
+            <p class="using__text">Apply on the skin</p>
+          </div>
+          <div class="using__inner">
+            <div class="using__circle">
+              <div class="using__img">
+                <img class="using-icon__img" src="images/icon-3.svg" alt="" />
+              </div>
+            </div>
+            <p class="using__text">Wait 5 minutes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="feedback__title">Testimonials</div>
+  <section class="splide" id="splide">
+    <div class="splide__arrows">
+      <button class="splide__arrow splide__arrow--prev">
+        <img id="change-prev-img" src="./images/arrow-left.svg" alt="" srcset="">
+      </button>
+      <button class="splide__arrow splide__arrow--next">
+        <img id="change-next-img" src="./images/arrow-right.svg" alt="" srcset="">
+      </button>
+    </div>
+    <div class="splide__track">
+      <ul class="splide__list">
+        <div class="splide__slide slide-block">
+          <img class="slider__images" src="images/slider-icon.png" alt="">
+          <div class="slider__name">Anna K.</div>
+          <p class="slider__text">
+            The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer
+            sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen
+            all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on
+            for the authoritative history of lorem ipsum.
+          </p>
+        </div>
+
+        <div class="splide__slide">
+          <img class="slider__images" src="images/slider-icon.png" alt="">
+          <div class="slider__name">Anna K.</div>
+          <p class="slider__text">
+            The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer
+            sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen
+            all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on
+            for the authoritative history of lorem ipsum.
+          </p>
+        </div>
+
+        <div class="splide__slide">
+          <img class="slider__images" src="images/slider-icon.png" alt="">
+          <div class="slider__name">Anna K.</div>
+          <p class="slider__text">
+            The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer
+            sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen
+            all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on
+            for the authoritative history of lorem ipsum.
+          </p>
+        </div>
+
+        <div class="splide__slide">
+          <img class="slider__images" src="images/slider-icon.png" alt="">
+          <div class="slider__name">Anna K.</div>
+          <p class="slider__text">
+            The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer
+            sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen
+            all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on
+            for the authoritative history of lorem ipsum.
+          </p>
+        </div>
+
+        <div class="splide__slide">
+          <img class="slider__images" src="images/slider-icon.png" alt="">
+          <div class="slider__name">Anna K.</div>
+          <p class="slider__text">
+            The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer
+            sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen
+            all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on
+            for the authoritative history of lorem ipsum.
+          </p>
+        </div>
+    </div>
+
+  </section>
+  <div class="splide" id="splide">
+    <div class="splide__arrows">
+      <button class="splide__arrow splide__arrow--prev">
+        <img src="./images/arrow-left.svg" alt="" srcset="">
+      </button>
+      <button class="splide__arrow splide__arrow--next">
+        <img src="./images/arrow-right.svg" alt="" srcset="">
+      </button>
+    </div>
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">Slide 01</li>
+        <li class="splide__slide">Slide 02</li>
+        <li class="splide__slide">Slide 03</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="blog">
+    <div class="blog__wrapper"> 
+      <img class="blog-bg__images" src="images/blog-background.svg" alt="background">
+  <div class="container">
+      <img class="blog__images" src="images/top-blog.jpg" alt="aloe"> 
+        <div class="blog__title">Blog</div>
+        <div class="blog__inner-wrap">
+      <div class="blog__inner-item">
+        <div class="blog__inner-box">
+          <img src="images/blog-img-1.png" alt="photo">
+          <div class="blog__inner-bg"></div>
+          <p class="blog__text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print</p>                  
+        </div>
+      </div>
+      <div class="blog__inner-item">
+        <div class="blog__inner-box">
+          <img src="images/blog-img-2.png" alt="photo">
+          <div class="blog__inner-bg"></div>
+          <p class="blog__text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print</p>                  
+        </div>
+      </div>
+      <div class="blog__inner-item">
+        <div class="blog__inner-box">
+          <img src="images/blog-img-3.png" alt="photo">
+          <div class="blog__inner-bg"></div>
+          <p class="blog__text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print</p>                  
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+<section class="brand">
+  <div class="container">
+    <img class="brand__images" src="images/blog-brand.jpg" alt="">
+  </div>                      
+</section>
+<section class="contact">
+  <div class="contact__wrapper">
+    <div class="container">
+    <div class="contact__subscribe">
+    <div class="contact__title">
+      <p>Subscribe to coffeeface emails</p> 
+    </div>
+    <p class="contact__text">
+      Subscribe to our coffeeface emails and get exclusive first access to new products, free surveys, free education and beauty tips, and live & virtual events. Unsubscribe anytime. For more information, see our privacy policy.
+    </p>
+    <div class="contact-search">
+      <div class="contact-search__inner">
+        <form class="contact-search__form">
+          <input class="contact-search__form-input" type="text" placeholder="Your email">
+          <button class="contact-search__form-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="contact__images">
+      <img class="cantact__images-goods" src="images/contact-img.png" alt="images-customer" >
+    </div>
+  </div>
+</section>
+<section class="bottom-slider">
+  <div class="botom-slider__title">@coffee_face</div>
+  <div class="bottom-slider__inner">
+
+    <div class="bottom-slider__inner-item">
+      <img src="images/second-slider-icon-1.png" alt="">
+    </div>
+    
+    <div class="bottom-slider__inner-item">
+      <img src="images/second-slider-icon-2.png" alt="">
+    </div>
+
+    <div class="bottom-slider__inner-item">
+      <img src="images/second-slider-icon-3.png" alt="">
+    </div>
+
+    <div class="bottom-slider__inner-item">
+      <img src="images/second-slider-icon-1.png" alt="">
+    </div>
+
+    <div class="bottom-slider__inner-item">
+      <img src="images/second-slider-icon-2.png" alt="">
+    </div>
+
+    <div class="bottom-slider__inner-item">
+      <img src="images/second-slider-icon-3.png" alt="">
+    </div>
+
+
+    <div class="bottom-slider__inner-item">
+      <img src="images/second-slider-icon-1.png" alt="">
+    </div>
+    
+    <div class="bottom-slider__inner-item">
+      <img src="images/second-slider-icon-2.png" alt="">
+    </div>
+
+    <div class="bottom-slider__inner-item">
+      <img src="images/second-slider-icon-3.png" alt="">
+    </div>
+
+    <div class="bottom-slider__inner-item">
+      <img src="images/second-slider-icon-1.png" alt="">
+    </div>
+
+    <div class="bottom-slider__inner-item">
+      <img src="images/second-slider-icon-2.png" alt="">
+    </div>
+
+    <div class="bottom-slider__inner-item">
+      <img src="images/second-slider-icon-3.png" alt="">
+    </div>
+
+  </div>
+  <a class="join-network" href="#">
+      <img class="join-network__images" src="images/icon-instagram.svg" alt="instagram">
+      <p class="instagram__link">Join us on instagram for new products, great giveaways and more!</p>
+  </a>
+
+  <footer class="footer">
+
+    <div class="footer__content">
+      <div class="footer__wrapper">
+        <div class="footer__inner">
+          <img class="footer__img" src="images/footer-background.svg" alt="footer images">
+          <div class="footer__col">
+            <img class="footer__logo" src="images/logo.svg" alt="logo">
+          </div>
+          <div class="footer__col footer__col-menu">
+            <ul class="footer__col-list ">
+              <li><a href="#">Home page</a></li>
+              <li><a href="#">About coffeeface</a></li>
+              <li><a href="#">Coffeeface the Community</a></li>
+            </ul>  
+          </div>
+          <div class="footer__col footer__col-info">
+            <ul class="footer__col-list">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Shipping-Terms</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul class="footer__social">
+              <li>
+                <a class="footer__item-images icosvg-1" href="#">
+                  <svg id="Bold" enable-background="new 0 0 24 24" height="17px" viewBox="0 0 24 24" width="17px" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
+              </a>
+              </li>
+              <li>
+                <a class="footer__item-images icosvg-2" href="#">
+                  <svg height="17px" viewBox="-21 -81 681.33464 681" width="17px" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="m200.964844 515.292969c241.050781 0 372.871094-199.703125 372.871094-372.871094 0-5.671875-.117188-11.320313-.371094-16.9375 25.585937-18.5 47.824218-41.585937 65.371094-67.863281-23.480469 10.441406-48.753907 17.460937-75.257813 20.636718 27.054687-16.230468 47.828125-41.894531 57.625-72.488281-25.320313 15.011719-53.363281 25.917969-83.214844 31.808594-23.914062-25.472656-57.964843-41.402344-95.664062-41.402344-72.367188 0-131.058594 58.6875-131.058594 131.03125 0 10.289063 1.152344 20.289063 3.398437 29.882813-108.917968-5.480469-205.503906-57.625-270.132812-136.921875-11.25 19.363281-17.742188 41.863281-17.742188 65.871093 0 45.460938 23.136719 85.605469 58.316407 109.082032-21.5-.660156-41.695313-6.5625-59.351563-16.386719-.019531.550781-.019531 1.085937-.019531 1.671875 0 63.46875 45.171875 116.460938 105.144531 128.46875-11.015625 2.996094-22.605468 4.609375-34.558594 4.609375-8.429687 0-16.648437-.828125-24.632812-2.363281 16.683594 52.070312 65.066406 89.960937 122.425781 91.023437-44.855469 35.15625-101.359375 56.097657-162.769531 56.097657-10.5625 0-21.003906-.605469-31.2617188-1.816407 57.9999998 37.175781 126.8710938 58.871094 200.8867188 58.871094"/></svg>
+              </a>
+              </li>
+              <li>
+                <a class="footer__item-images icosvg-3" href="#">
+                  <svg height="17px" viewBox="-21 -21 682.66669 682.66669" width="17px" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="m0 132.976562v374.046876c0 73.441406 59.535156 132.976562 132.976562 132.976562h374.046876c73.441406 0 132.976562-59.535156 132.976562-132.976562v-374.046876c0-73.441406-59.535156-132.976562-132.976562-132.976562h-374.046876c-73.441406 0-132.976562 59.535156-132.976562 132.976562zm387.792969 368.359376c-157.855469 54.464843-303.59375-91.273438-249.128907-249.128907 18.351563-53.203125 60.335938-95.191406 113.539063-113.542969 157.859375-54.464843 303.597656 91.273438 249.132813 249.132813-18.351563 53.203125-60.335938 95.1875-113.542969 113.539063zm154.28125-374.859376c-2.511719 13.152344-13.394531 20.804688-24.652344 20.804688-6.851563 0-13.835937-2.828125-19.183594-8.964844-.472656-.542968-.914062-1.125-1.304687-1.730468-5.519532-8.4375-5.691406-18.460938-1-26.589844 3.320312-5.753906 8.679687-9.863282 15.097656-11.582032 6.410156-1.726562 13.113281-.839843 18.859375 2.484376 8.132813 4.6875 12.992187 13.457031 12.4375 23.511718-.039063.6875-.121094 1.386719-.253906 2.066406zm0 0"/><path d="m320 164.523438c-85.734375 0-155.476562 69.742187-155.476562 155.476562s69.742187 155.476562 155.476562 155.476562 155.476562-69.742187 155.476562-155.476562-69.742187-155.476562-155.476562-155.476562zm0 0"/></svg>
+              </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer__payment">
+          <ul class="footer__payment-card">
+              <li class="card-visa"><a href="#"></a></li>
+              <li class="card-amex"><a href="#"></a></li>
+              <li class="card-master"><a href="#"></a></li>
+              <li class="card-jcb"><a href="#"></a></li>
+              <li class="card-discover"><a href="#"></a></li>
+              <li class="card-diners-club"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copy">
+      <hr>
+      <div class="footer__wrapper">
+        <div class="footer__copy-text">          
+          <p>© 2020, Coffeeface</p>
+          <p>Powered by Shopify</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    new Splide('#splide', {
+      type: 'loop',
+      padding: {
+        right: '20rem',
+        left: '20rem',
+      },
+    }).mount();
+  </script>
 </body>
+
 </html>
