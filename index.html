@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Coffeeface</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
@@ -26,6 +26,7 @@
           <img class="logo__link" src="images/logo.svg" alt="logo" />
         </a>
         <nav class="menu">
+          <button class="menu__btn">Menu</button>
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__list-link" href="#">Home</a>
@@ -44,6 +45,7 @@
             </li>
           </ul>
         </nav>
+        <a class="menu__search" href="#"></a>
         <div class="bascet__box">
           <a class="bag header__circle" href="#">
             <img class="images-icon" src="images/shopping-bag.svg" alt="" />
@@ -56,18 +58,21 @@
 
   <section class="shopping">
     <div class="shopping__wrapper">
+      <div class="shopping__images-top">
       <img class="images-top" src="images/shop-top.jpg" alt="goods" />
+      <img class="images__mobile" src="images/mobile/shop-top-mobile.jpg" alt="" >
+      </div>
       <div class="container">
-        <div class="shopping__text">
+        <div class="shopping__to-by">
           <h2 class="shopping__title">
             A Revolution in Antibacterial, Antiviral Facial Cleaning
           </h2>
           <p class="shopping__subtitle">
             Manuka honey antibacterial properties that help protect and seal
             your skin
-          </p>
-        </div>
+          </p>        
         <button class="btn">Shop now</button>
+      </div>
       </div>
     </div>
   </section>
@@ -90,7 +95,7 @@
 
   <section class="shopping">
     <div class="shopping__wrapper">
-      <img class="images-top" src="images/shop-bottom.svg" alt="goods" />
+      <img class="images-top shopping-img-top" src="images/shop-bottom.svg" alt="goods" />
       <div class="container">
         <div class="shopping__text">
           <h2 class="shopping__title shopping__title-text">
@@ -116,13 +121,20 @@
             <div class="shopping-price-sale">$64.99</div>
           </div>
         </div>
-        <button class="btn">Buy it now</button>
+        <div class="btn__wrapper">
+          <button class="btn">Buy it now</button>          
+        </div>
+        <img class="images-bottom__mobile" src="images/mobile/shop-bottom.svg" alt="goods" />
       </div>
     </div>
   </section>
-  <section class="block">
+ <section class="block">
     <div class="block__wrapper">
-      <img class="block__img" src="images/block.jpg" alt="images" />
+      <div class="block__img-wrapper">
+        <img class="block__img" src="images/block.jpg" alt="images" />
+        <img class="block__img-white" src="images/mobile/background.jpg" alt="images" />        
+        <img class="block__img__mobile" src="images/mobile/block-mobile.jpg" alt="images" />
+      </div>
       <div class="block__title">
         Exfoliate. <br />
         Serum. <br />
@@ -130,9 +142,11 @@
       </div>
     </div>
   </section>
-  <section class="using">
+  <!-- <section class="using">
     <div class="using__wrapper">
       <img class="using-background__img" src="images/using-img.svg" alt="" />
+      <img class="using-background__img-mobile" src="images/mobile/using-img.svg" alt="" />
+      <div class="using-background__img-mobile"></div>
       <div class="container">
         <div class="using__title">How to use Coffeeface</div>
         <div class="using-content__wrap">
@@ -162,8 +176,38 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+
+    <section class="using">
+      <div class="container">
+          <h2 class="using__title">How to use Coffeeface</h2>  
+          <div class="using__wrapper">
+              <div class="using__item">
+                  <div class="using__round">
+                      <img src="images/icon-1.svg" alt="1" class="using_icon">                    
+                  </div>
+                  <div class="using__descr">Wash your face</div>
+              </div>
+  
+              <div class="using__item">
+                  <div class="using__round">
+                      <img src="images/icon-2.svg" alt="2" class="using_icon">                   
+                  </div>
+                  <div class="using__descr">Apply on the skin</div>
+              </div>
+  
+              <div class="using__item">
+                  <div class="using__round">
+                      <img src="images/icon-3.svg" alt="3" class="using_icon">                   
+                  </div>
+                  <div class="using__descr">Wait 5 minutes</div>
+              </div>             
+  
+          </div>
+      </div>
   </section>
+
+   </section>
   <div class="feedback__title">Testimonials</div>
   <section class="splide" id="splide">
     <div class="splide__arrows">
@@ -244,14 +288,14 @@
     </div>
     <div class="splide__track">
       <ul class="splide__list">
-        <li class="splide__slide">Slide 01</li>
-        <li class="splide__slide">Slide 02</li>
-        <li class="splide__slide">Slide 03</li>
+        <li class="splide__slide splide__slide-first">Slide 01</li>
+        <li class="splide__slide splide__slide-second">Slide 02</li>
+        <li class="splide__slide splide__slide-third">Slide 03</li>
       </ul>
     </div>
   </div>
 
-  <section class="blog">
+<section class="blog">
     <div class="blog__wrapper"> 
       <img class="blog-bg__images" src="images/blog-background.svg" alt="background">
   <div class="container">
@@ -260,21 +304,21 @@
         <div class="blog__inner-wrap">
       <div class="blog__inner-item">
         <div class="blog__inner-box">
-          <img src="images/blog-img-1.png" alt="photo">
+          <img class="blog__img" src="images/blog-img-1.png" alt="photo">
           <div class="blog__inner-bg"></div>
           <p class="blog__text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print</p>                  
         </div>
       </div>
       <div class="blog__inner-item">
         <div class="blog__inner-box">
-          <img src="images/blog-img-2.png" alt="photo">
+          <img class="blog__img"  src="images/blog-img-2.png" alt="photo">
           <div class="blog__inner-bg"></div>
           <p class="blog__text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print</p>                  
         </div>
       </div>
       <div class="blog__inner-item">
         <div class="blog__inner-box">
-          <img src="images/blog-img-3.png" alt="photo">
+          <img class="blog__img"   src="images/blog-img-3.png" alt="photo">
           <div class="blog__inner-bg"></div>
           <p class="blog__text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print</p>                  
         </div>
@@ -284,7 +328,7 @@
     </div>
   </div>
 </section>
-<section class="brand">
+ <section class="brand">
   <div class="container">
     <img class="brand__images" src="images/blog-brand.jpg" alt="">
   </div>                      
@@ -314,7 +358,7 @@
     </div>
   </div>
 </section>
-<section class="bottom-slider">
+ <section class="bottom-slider">
   <div class="botom-slider__title">@coffee_face</div>
   <div class="bottom-slider__inner">
 
@@ -372,13 +416,14 @@
       <img class="join-network__images" src="images/icon-instagram.svg" alt="instagram">
       <p class="instagram__link">Join us on instagram for new products, great giveaways and more!</p>
   </a>
-
-  <footer class="footer">
-
+</section>
+ <footer class="footer">
+<div class="container">
     <div class="footer__content">
       <div class="footer__wrapper">
         <div class="footer__inner">
           <img class="footer__img" src="images/footer-background.svg" alt="footer images">
+          <div class="footer__img-mobile"></div>
           <div class="footer__col">
             <img class="footer__logo" src="images/logo.svg" alt="logo">
           </div>
@@ -438,11 +483,10 @@
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+  </footer> 
 
 
-
-</section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
