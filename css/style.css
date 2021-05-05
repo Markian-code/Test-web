@@ -893,12 +893,11 @@ span {
         padding-left: 25% !important;
         padding-right: 30% !important;
         box-sizing: border-box !important;
-
         position: relative !important;
         width: 100% !important;
         height: auto !important;
     }
-.splide__slide {
+    .splide__slide {
         margin-left: 137px !important;
         margin-right: 552px !important;
         width: 657px !important;
@@ -947,7 +946,16 @@ span {
 
 @media (max-width: 1271px) {
     .splide__track {
-        padding-left: 30% !important;
+        display: none;
+    }
+    .splide__arrow--next {
+        display: none;
+    }
+    .splide__arrow--prev {
+        display: none;
+    }
+    .feedback__title {
+        display: none;
     }
 }
 @media (max-width: 1207px) {
